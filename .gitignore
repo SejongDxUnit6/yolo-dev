@@ -1,0 +1,6 @@
+.vscode/
+*.pt
+/**/__pycache__
+/**/**/__pycache__
+dataset/
+sorted_images/
