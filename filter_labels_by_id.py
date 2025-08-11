@@ -36,6 +36,7 @@ item_dict = {
     467: "지갑"
 }
 
+
 # 🔧 경로 설정 (현재 스크립트 기준 상대경로 또는 절대경로)
 json_folder = r'C:\Users\user\Downloads\037.Small object detection을 위한 이미지 데이터\01.데이터\2.Validation\VL_피혁_잡화\mnt\nas2\Projects\TTA_2022_jgcha\jhbae\037.Small object detection을 위한 이미지 데이터\01.데이터\2.Validation\2.라벨링데이터\VL_피혁_잡화\leather01'
 output_file = './id_image_list_피혁_잡화.txt' 
