@@ -8,12 +8,13 @@ def run_inference(model_path, img_path, output_dir):
     model = YOLO(model_path)     
     results = model.predict(
         source=img_path,
-        conf=0.05,
-        imgsz=640,
+        conf=0.01,
+        imgsz=768,
         save=False,          # 저장 안 하고 메모리에서 직접 처리
-        classes=[0],         # 클래스 0만
         exist_ok=True
     )
+
+    print(results)
 
     for res in results:
         img_path = res.path  # 이미지 경로
