@@ -7,4 +7,5 @@ dataset/
 sorted_images/
 image/
 runs/
-results/
+results/train2/
+resources/

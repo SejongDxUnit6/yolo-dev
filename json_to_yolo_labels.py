@@ -49,7 +49,12 @@ source_roots = [
     ["./dataset/images/train", "./dataset/labels/train"],
     ["./dataset/images/val",  "./dataset/labels/val"]
 ]
-json_folder = r"./dataset/labels/resources"
+
+for image_dir, label_dir in source_roots:
+    os.makedirs(image_dir, exist_ok=True)
+    os.makedirs(label_dir, exist_ok=True)
+
+json_folder = r"./resources"
 for source_root in source_roots:
     for file_name in os.listdir(source_root[0]):
         json_path = os.path.join(json_folder, file_name.split(".")[0] + ".json")
