@@ -8,7 +8,7 @@ def val(model_path, data_yaml):
     model = YOLO(model_path)
 
     # 모델1 성능 평가
-    metrics = model.val(data=data_yaml, split="val", project="results", name="val1")
+    metrics = model.val(data=data_yaml, split="val")
     print("\n[모델 성능]")
     print(f"mAP50: {metrics.box.map50:.4f}")
     print(f"mAP50-95: {metrics.box.map:.4f}")
@@ -16,6 +16,8 @@ def val(model_path, data_yaml):
     print(f"Recall: {metrics.box.mr:.4f}")
 
 if __name__=='__main__':
-    val('results/train1/weights/best.pt','./config.yaml')
-    val('results/train12/weights/best.pt','./config.yaml')
-    val('results/train13/weights/best.pt','./config.yaml')
+    # val('results/train1/weights/best.pt','./config.yaml')
+    # val('results/train12/weights/best.pt','./config.yaml')
+    # val('results/train13/weights/best.pt','./config.yaml')
+    val('results/train222/weights/best.pt','./config.yaml')
+    val('results/train223/weights/best.pt','./config.yaml')
