@@ -16,8 +16,31 @@ def val(model_path, data_yaml):
     print(f"Recall: {metrics.box.mr:.4f}")
 
 if __name__=='__main__':
-    # val('results/train1/weights/best.pt','./config.yaml')
-    # val('results/train12/weights/best.pt','./config.yaml')
-    # val('results/train13/weights/best.pt','./config.yaml')
-    val('results/train222/weights/best.pt','./config.yaml')
-    val('results/train223/weights/best.pt','./config.yaml')
+    val('results/train1/weights/best.pt','./config.yaml')
+    val('results/train12/weights/best.pt','./config.yaml')
+    val('results/train13/weights/best.pt','./config.yaml')
+    val('results/train2/weights/best.pt','./config.yaml')
+    val('results/train22/weights/best.pt','./config.yaml')
+
+"""
+train1
+[모델 성능]
+mAP50: 0.7026
+mAP50-95: 0.5888
+Precision: 0.6559
+Recall: 0.6722
+
+train13
+[모델 성능]
+mAP50: 0.7161
+mAP50-95: 0.5994
+Precision: 0.7744
+Recall: 0.6092
+
+train222
+[모델 성능]
+mAP50: 0.6828
+mAP50-95: 0.5651
+Precision: 0.6789
+Recall: 0.6233
+"""
